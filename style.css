@@ -1,9 +1,18 @@
+.img_box {
+    display: block;
+    float: right;
+    position: relative;
+}
+
+
 .navigation_bar {
     list-style-type: revert;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    top: 200px;
+    display: block;
 }
 
 li {
@@ -21,4 +30,3 @@ li a {
 .navigation_bar :hover {
     background-color: #111;
 }
-
