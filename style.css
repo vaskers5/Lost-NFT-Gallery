@@ -1,18 +1,11 @@
-.img_box {
-    display: block;
-    float: right;
-    position: relative;
-}
-
-
 .navigation_bar {
     list-style-type: revert;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
-    top: 200px;
-    display: block;
+    float: left;
+    display: flex;
 }
 
 li {
@@ -29,4 +22,21 @@ li a {
 
 .navigation_bar :hover {
     background-color: #111;
+}
+
+.hero {
+    float: left;
+    background: #ccc;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 50%;
+    white-space: nowrap;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.img_box {
+    position: relative;
+    float: right;
 }
