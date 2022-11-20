@@ -1,49 +1,143 @@
-header {
-    display: flex;
-}
+/* common */
 
-.navigation_bar {
-    width: 100%;
-    list-style-type: revert;
+body {
     margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    float: left;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 15px;
+    line-height: 1.25;
+    text-align: left;
+    background-color: white;
+    color: black;
+    font-weight: normal;
+    text-transform: none;
+}
+
+header {
+    width: 100%;
+    position: absolute;
+    background-color: black;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* home */
+
+.navigation {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
-li {
-    float: left;
-}
-
-li a {
-    display: block;
+.nav_link {
+    font-size: 20px;
     color: white;
+    text-decoration: none;
+    padding: 15px 0;
+}
+
+.intro {
+    width: 100%;
+    height: 100vh;
+    background: url("./images/back.png") center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name {
+    font-size: 150px;
+    font-weight: 800;
     text-align: center;
-    padding: 14px 16px;
+    text-transform: uppercase;
+    color: black;
+}
+
+/* nft page */
+
+.collection_intro {
+    background: url("./images/back.png") center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro_name {
+    padding-top: 50px;
+    font-size: 60px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+}
+
+.intro_subtitle {
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+}
+
+.block {
+    background-color: black;
+    background-size: cover;
+    width: 100%;
+    height: 30px;
+}
+
+a:-webkit-any-link {
     text-decoration: none;
 }
 
-.navigation_bar :hover {
-    background-color: #111;
-}
-
-.hero {
-    float: left;
-    background: #ccc;
-    padding: 15px;
-    box-sizing: border-box;
+.back {
     width: 100%;
-    height: 400px;
-    white-space: nowrap;
-    flex-direction: column;
+    height: 300px;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.img_box {
-    position: relative;
-    float: right;
+.azuki {
+    background: url("./images/azuki.png") center no-repeat;
+    background-size: cover;
+}
+
+.kitties {
+    background: url("./images/kitties.png") center no-repeat;
+    background-size: cover;
+}
+
+.cats {
+    background: url("./images/cats.png") center no-repeat;
+    background-size: cover;
+}
+
+.space {
+    background: url("./images/space.png") center no-repeat;
+    background-size: cover;
+}
+
+.mfer {
+    background: url("./images/mfer.png") center no-repeat;
+    background-size: cover;
+}
+
+.collection_name {
+    font-size: 60px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+}
+
+.collection_name:hover {
+    color: #9d0007
 }
