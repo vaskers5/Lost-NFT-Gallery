@@ -136,6 +136,7 @@ a:-webkit-any-link {
     text-transform: uppercase;
     color: black;
     text-decoration: none;
+    text-shadow: 4px 4px 2px #9d0007, 0 0 1em white;
 }
 
 .collection_name:hover {
