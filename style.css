@@ -195,9 +195,6 @@ tr:nth-child(even) td {
 
 @media only screen
 and (max-width: 1000px) {
-    .body {
-        font-family: "Chilanka", cursive;
-    }
 
     .nav_link {
         font-size: 15px;
