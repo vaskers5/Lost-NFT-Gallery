@@ -14,7 +14,7 @@ body {
 
 header {
     width: 100%;
-    position: absolute;
+    position: fixed;
     background-color: black;
 }
 
@@ -160,7 +160,7 @@ a:-webkit-any-link {
     border-collapse: collapse;
     min-width: 90%;
     margin: auto 5%;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-columns: repeat(5, auto);
     font-size: 18px;
 }
 
@@ -195,11 +195,6 @@ tr:nth-child(even) td {
 
 @media only screen
 and (max-width: 1000px) {
-
-    .nav_link {
-        font-size: 15px;
-    }
-
     .collection_intro {
         height: 500px;
     }
@@ -207,9 +202,5 @@ and (max-width: 1000px) {
     .name {
         font-size: 75px;
         font-weight: 800;
-    }
-
-    th, td {
-        font-size: 10px;
     }
 }
