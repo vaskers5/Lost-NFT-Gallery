@@ -24,6 +24,20 @@ header {
     margin: 0 auto;
 }
 
+footer {
+    position: relative;
+    box-sizing: border-box;
+    color: white;
+    background-color: black;
+    margin: 0;
+}
+
+.loading_time {
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
 /* home */
 
 .navigation {
@@ -33,11 +47,24 @@ header {
     align-items: center;
 }
 
-.nav_link {
+nav a {
     font-size: 20px;
     color: white;
     text-decoration: none;
     padding: 15px 40px;
+}
+
+nav a:hover {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: #af0400;
+    color: #af0400;
+}
+
+nav a:is(:link, :active, :visited).active {
+    background-color: whitesmoke;
+    color: black;
+    text-shadow: 1px 1px 1px #9d0007, 0 0 1em white;
 }
 
 .intro {
