@@ -1,0 +1,206 @@
+/* common */
+
+body {
+    margin: 0;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 15px;
+    line-height: 1.25;
+    text-align: left;
+    background-color: white;
+    color: black;
+    font-weight: normal;
+    text-transform: none;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    background-color: black;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* home */
+
+.navigation {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_link {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 15px 40px;
+}
+
+.intro {
+    width: 100%;
+    height: 100vh;
+    background: url("./images/back.png") center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name {
+    font-size: 130px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+}
+
+/* nft page */
+
+.collection_intro {
+    background: url("./images/back.png") center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro_name {
+    padding-top: 50px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: 60px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+}
+
+.intro_subtitle {
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+}
+
+.block {
+    background-color: black;
+    background-size: cover;
+    width: 100%;
+    height: 30px;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
+.back {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.azuki {
+    background: url("./images/azuki.png") center no-repeat;
+    background-size: cover;
+}
+
+.kitties {
+    background: url("./images/kitties.png") center no-repeat;
+    background-size: cover;
+}
+
+.cats {
+    background: url("./images/cats.png") center no-repeat;
+    background-size: cover;
+}
+
+.space {
+    background: url("./images/space.png") center no-repeat;
+    background-size: cover;
+}
+
+.mfer {
+    background: url("./images/mfer.png") center no-repeat;
+    background-size: cover;
+}
+
+.collection_name {
+    font-size: 60px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+    text-shadow: 4px 4px 2px #9d0007, 0 0 1em white;
+}
+
+.collection_name:hover {
+    color: #9d0007
+}
+
+/* about */
+
+.table_inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.table {
+    display: grid;
+    border-collapse: collapse;
+    min-width: 90%;
+    margin: auto 5%;
+    grid-template-columns: repeat(5, auto);
+    font-size: 18px;
+}
+
+thead, tbody, tr {
+    display: contents;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid black;
+    background-color: white;
+    font-size: 18px;
+}
+
+td, th {
+    border: 1px solid #403e3e;
+    padding: 10px;
+    text-align: center;
+    vertical-align: center;
+}
+
+th {
+    font-size: 20px;
+    background-color: #b26c6f;
+}
+
+tr:nth-child(even) td {
+    background-color: #609ea7;
+}
+
+/* media */
+
+@media only screen
+and (max-width: 1000px) {
+    .collection_intro {
+        height: 500px;
+    }
+
+    .name {
+        font-size: 75px;
+        font-weight: 800;
+    }
+}
