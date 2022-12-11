@@ -1,6 +1,5 @@
 document.querySelectorAll('nav a').forEach(link => {
-    console.log(link.href, window.location.pathname)
-    if (link.href.includes(window.location.pathname)) {
+    if (link.href === window.location.href) {
         link.classList.add('active')
     }
 })
