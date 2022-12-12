@@ -205,10 +205,6 @@ a:-webkit-any-link {
 }
 
 .swiper-slide:not(.main-slide) {
-    width: 100%;
-}
-
-.swiper-slide:not(.main-slide) {
     width: 20%;
     min-width: 300px;
 }
