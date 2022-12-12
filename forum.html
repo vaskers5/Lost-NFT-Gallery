@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>lost nft gallery</title>
+  <meta name="keywords" content="nft, crypto, buy, lost gallery, shop">
+  <meta name="description" content="nft shop">
+  <!--  Styles for swiper  -->
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <script defer src="scripts/active_menu.js"></script>
+  <script src="scripts/loading_time.js"></script>
+  <script src="scripts/loading_forum.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav class="navigation">
+        <a class="nav_link" href="index.html">home</a>
+        <a class="nav_link" href="nfts.html">collections & items</a>
+        <a class="nav_link" href="about.html">about nft</a>
+        <a class="nav_link" href="forum.html">forum</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="review_block">
+      <div class="container">
+        <div class="review_info">
+          <div id="button" class="button_forum">
+            load forum messages
+          </div>
+          <div id="loading">
+          </div>
+          <div id="messages" class="messages"></div>
+          <template id="message">
+            <div class="message">
+              <div class="title"></div>
+              <div class="body"></div>
+            </div>
+          </template>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="loading_time">
+        <span id="time"></span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

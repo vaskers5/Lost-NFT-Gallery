@@ -5,8 +5,12 @@
   <title>lost nft gallery</title>
   <meta name="keywords" content="nft, crypto, buy, lost gallery, shop">
   <meta name="description" content="nft shop">
+<!--  Styles for swiper  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="style.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <script defer src="scripts/active_menu.js"></script>
+  <script src="scripts/loading_time.js"></script>
 </head>
 
 <body>
@@ -16,6 +20,7 @@
       <a class="nav_link" href="index.html">home</a>
       <a class="nav_link" href="nfts.html">collections & items</a>
       <a class="nav_link" href="about.html">about nft</a>
+      <a class="nav_link" href="forum.html">forum</a>
     </nav>
   </div>
 </header>
@@ -27,13 +32,56 @@
     </div>
   </div>
   <div class="block"></div>
-  <div class="back azuki">
-    <div class="container">
-      <a href="https://rarible.com/azuki/items" target="_blank">
-        <h1 class="collection_name">azuki</h1>
-      </a>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide main-slide">
+        <div class="container">
+          <a href="https://rarible.com/azuki/items" target="_blank">
+            <h1 class="collection_name">azuki</h1>
+          </a>
+        </div>
+      </div>
+      <div class="swiper-slide"><img src="images/azuki/0.png" alt=""></div>
+      <div class="swiper-slide"><img src="images/azuki/1.png" alt=""></div>
+      <div class="swiper-slide"><img src="images/azuki/2.png" alt=""></div>
+      <div class="swiper-slide"><img src="images/azuki/3.png" alt=""></div>
+      <div class="swiper-slide"><img src="images/azuki/4.png" alt=""></div>
+      <div class="swiper-slide"><img src="images/azuki/5.png" alt=""></div>
+      <div class="swiper-slide"><img src="images/azuki/6.png" alt=""></div>
+      <div class="swiper-slide"><img src="images/azuki/7.png" alt=""></div>
     </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
   </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: "auto",
+      spaceBetween: 20,
+      loop: true,
+
+      keyboard: {
+        enabled: true,
+      },
+
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    })
+  </script>
+
   <div class="block"></div>
   <div class="back cats">
     <div class="container">
@@ -67,5 +115,12 @@
     </div>
   </div>
 </main>
+<footer>
+  <div class="container">
+    <div class="loading_time">
+      <span id="time"></span>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
