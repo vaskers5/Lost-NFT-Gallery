@@ -178,7 +178,7 @@ a:-webkit-any-link {
 /* swiper */
 
 .swiper {
-    width: 100vw;
+    width: 100%;
     height: 300px;
 }
 
@@ -201,7 +201,7 @@ a:-webkit-any-link {
 }
 
 .swiper-slide .main-slide {
-    width: 100vw;
+    width: 100%;
 }
 
 .swiper-slide:not(.main-slide) {
@@ -210,6 +210,7 @@ a:-webkit-any-link {
 
 .swiper-slide:not(.main-slide) {
     width: 20%;
+    min-width: 300px;
 }
 
 .swiper-button-next, .swiper-button-prev {
